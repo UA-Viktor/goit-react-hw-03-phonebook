@@ -3,7 +3,8 @@ import React from 'react';
 import IconButton from '../IconButton/IconButton';
 import { ReactComponent as AddIcon } from '../../icons/delete.svg';
 
-import { List, Item, Button } from './Contacts.styled';
+// import { List, Item, Button } from './Contacts.styled';
+import { List, Item } from './Contacts.styled';
 
 const Contacts = ({ contacts, onDeleteContact }) => (
   <List className="Contacts">
