@@ -1,8 +1,10 @@
 import styled from '@emotion/styled';
 
 export const IconBtn = styled.button`
-  margin-top: 40px;
-  margin-left: 40px;
+  ${
+    '' /* margin-top: 40px;
+  margin-left: 40px; */
+  }
   padding: 10px;
   border: 1px solid #3f6884;
   border-radius: 50%;
@@ -16,7 +18,7 @@ export const IconBtn = styled.button`
   justify-content: center;
 
   &:hover {
-    background-color: #55a391;
+    background-color: #8ebdbc;
     color: #306665;
     border: 1px solid #f3f3f3;
   }

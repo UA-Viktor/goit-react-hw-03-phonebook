@@ -9,8 +9,8 @@ import Section from './Section/Section';
 import ContactForm from './Form/FormFormik';
 import Contacts from './Contacts/Contacts';
 import Filter from './Filter/Filter';
-import IconButton from './IconButton/IconButton';
 
+import IconButton from './IconButton/IconButton';
 import { ReactComponent as AddIcon } from '../icons/add.svg';
 
 class App extends Component {
@@ -99,9 +99,14 @@ class App extends Component {
 
     return (
       <>
-        <IconButton onClick={this.toggleModal} aria-label="Добавить todo">
-          <AddIcon width="40" height="40" fill="#3f6884" />
-        </IconButton>
+        <Section
+          text="Add Contact"
+          childComponent={
+            <IconButton onClick={this.toggleModal} aria-label="Добавить todo">
+              <AddIcon width="40" height="40" fill="#3f6884" />
+            </IconButton>
+          }
+        />
 
         {showModal && (
           <Modal onClose={this.toggleModal}>
